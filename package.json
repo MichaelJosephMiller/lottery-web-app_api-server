@@ -6,10 +6,10 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "babel-node ./bin/www --",
-    "serve": "nodemon --exec babel-node ./bin/www --",
-    "debug": "nodemon --exec babel-node --inspect ./bin/www --",
-    "compile-babel": "./node_modules/.bin/babel src --out-dir dist"
+    "start": "node ./dist/app --",
+    "serve": "nodemon --exec babel-node ./src/app --",
+    "debug": "nodemon --exec babel-node --inspect ./src/app --",
+    "build": "babel src --out-dir dist"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.3",
