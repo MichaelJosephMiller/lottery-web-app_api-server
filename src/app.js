@@ -10,7 +10,7 @@ const cron = require('node-cron')
 const scraper = require('./modules/scraper')
 require('custom-env').env('dev')
 
-const mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL,
+const mongoURL = process.env.MONGO_URL,
       port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || '3000',
       ip = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || 'localhost'
 
